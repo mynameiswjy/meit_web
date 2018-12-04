@@ -24,6 +24,6 @@
 	}
 </script>
 
-<style scoped>
-
+<style lang="scss">
+  @import "../../../assets/css/public/layout.scss";
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="m-geo">
-    <i class="class"/>北京市
+    <i class="el-icon-location"/>北京市
     <nuxt-link
       class="changeCity"
       to="/changeCity"
@@ -12,10 +12,9 @@
 </template>
 
 <script>
-	export default {
-	}
+  export default {}
 </script>
 
-<style scoped>
+<style lang="scss">
 
 </style>
