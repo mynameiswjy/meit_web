@@ -3,7 +3,7 @@
     <div>
       <logo/>
       <h1 class="title">
-        meituan_pro
+        meituan_pro22222
       </h1>
       <h2 class="subtitle">
         My splendiferous Nuxt.js project
