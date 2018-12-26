@@ -1,0 +1,26 @@
+{
+  "apps" : [{
+    "name": "nuxt-pro",
+    "script": "./server/index.js",
+    "args": ["nodemon", "cross-env", "server"],  //node的args参数 等同于  node ./bin/ww  -p 30001    其中参数-p和3001，都可以有 process.argv 拿到，process.argv为一个数组
+    "node_args": "--harmony",    //node harmony模式启动
+    "merge_logs": true,
+    "cwd":"./",
+    "log_file": "./log/combined.outerr.log",
+    "out_file": "./log/out.log",
+    "watch": [
+      "./pages",
+      "./server",
+      "./layouts",
+      "./components",
+      "./store"
+    ],
+    "ignore_watch" : [  //不监视的文件 cross-env NODE_ENV=development nodemon server/index.js --watch server  || cross-env NODE_ENV=production node server/index.js
+      "./node_modules"
+    ],
+    "error_file": "./log/err.log",
+    "env": {                    //node的 env参数， 可以通过  process.env.xxx获取
+      "NODE_ENV": "development"
+    }
+  }]
+}
